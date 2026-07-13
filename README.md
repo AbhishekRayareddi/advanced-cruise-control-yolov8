@@ -68,7 +68,7 @@ The trained model was also evaluated under low-light conditions, demonstrating r
 
 The proposed system combines computer vision and embedded hardware to detect road speed humps and control vehicle speed in the prototype.
 
-![Block Diagram](images/block_diagram.png)
+![Block Diagram](images/block_daigram.png)
 
 ---
 
