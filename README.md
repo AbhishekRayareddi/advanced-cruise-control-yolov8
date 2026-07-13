@@ -44,7 +44,62 @@ The annotated dataset was trained using the **YOLOv8** object detection framewor
 
 The trained detection model was integrated with an Arduino-based prototype consisting of an ultrasonic sensor, LCD display, motor driver, and DC motor setup. Based on the detected road condition, the prototype demonstrates adaptive vehicle speed control.
 
+---
 
+## Detection Results
+
+The trained YOLOv8 model was evaluated under different road and lighting conditions to verify its ability to detect road speed humps accurately.
+
+### Original vs Detected Image
+
+The model successfully identifies the speed hump by generating a bounding box around the detected object.
+
+![Original vs Detection](images/marked_unmarked_speed_hump.png)
+
+### Night-Time Detection
+
+The trained model was also evaluated under low-light conditions, demonstrating reliable detection performance during nighttime.
+
+![Night Detection](images/night_detection.png)
+
+---
+
+## System Architecture
+
+The proposed system combines computer vision and embedded hardware to detect road speed humps and control vehicle speed in the prototype.
+
+![Block Diagram](images/block_diagram.png)
+
+---
+
+## Detection Workflow
+
+The workflow below illustrates the complete detection pipeline, from image acquisition to speed hump detection and control decision.
+
+![Detection Workflow](images/detection_workflow.png)
+
+---
+
+## Hardware Prototype
+
+The prototype integrates the trained detection system with an Arduino-based adaptive cruise control setup to demonstrate speed adjustment and obstacle handling.
+
+![Hardware Prototype](images/hardware_prototype.png)
+
+### Circuit Diagram
+
+The circuit diagram illustrates the hardware connections between the Arduino Uno, ultrasonic sensor, LCD display, motor driver, and DC motor.
+
+![Circuit Diagram](images/circuit_diagram.png)
+
+---
+
+## Future Improvements
+
+- Expand the dataset with more road conditions and weather variations.
+- Improve detection accuracy using larger and more diverse datasets.
+- Integrate the system with real-time vehicle control hardware.
+- Extend the system to detect additional road features such as potholes, lane markings, and traffic signs.
 
 ## Results
 
